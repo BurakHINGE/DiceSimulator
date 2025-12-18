@@ -1,0 +1,48 @@
+name: 🐞 Bug Report
+description: Report a bug in DiceSimulator
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the sections below clearly.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is the bug?
+      placeholder: The dice always returns the same value...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the issue
+      placeholder: |
+        1. Run the program
+        2. Enter dice count
+        3. See the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: macOS / Windows / Linux, Python version
