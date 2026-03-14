@@ -20,12 +20,12 @@
 ## 🇬🇧 English
 
 This project is a **console-based dice simulation program** developed using Java.  
-It simulates rolling **10 fair dice** multiple times and visualizes the distribution of the resulting sums using a text-based histogram.
+It simulates rolling fair dice multiple times and visualizes the distribution of the resulting sums using a text-based histogram.
 
 The program helps demonstrate randomness, loops, arrays, and basic probability concepts.
 
 ### 🚀 Features
-- Simulates rolling **10 fair dice**
+- Simulates rolling fair dice
 - User defines how many times the dice are rolled
 - Calculates the total value of each roll
 - Displays results using a **star (`*`) based histogram**
@@ -42,13 +42,13 @@ java diceSimulator
 ## 🇹🇷 Türkçe
 
 Bu proje, **Java kullanılarak geliştirilmiş konsol tabanlı bir zar simülasyonu programıdır**.  
-Program, 10 adet zarın belirli sayıda atılmasını simüle eder ve oluşan toplam değerleri yıldız (`*`) grafiği ile gösterir.
+Program, girilen miktarda zarın girilen miktarda atılmasını simüle eder ve oluşan toplam değerleri yıldız (`*`) grafiği ile gösterir.
 
 Temel algoritma mantığı, döngüler ve diziler üzerine pratik yapmak amacıyla hazırlanmıştır.
 
 ### 🚀 Özellikler
-- 10 adet zar ile simülasyon  
-- Kullanıcıdan atış sayısı alma  
+- Girilen miktarda zar ile simülasyon  
+- Kullanıcıdan zar ve atış sayısı alma  
 - Her atışın toplam değerini hesaplama  
 - Sonuçları yıldız (`*`) grafiğiyle görselleştirme  
 - Basit ve anlaşılır konsol çıktısı  
@@ -65,7 +65,8 @@ java diceSimulator
 
 | Version | Date       | Description |
 |--------:|------------|-------------|
-| 1.0.0   | 2025-12-26 | Initial release. / İlk sürüm. |
+| 1.1.0   | 2026-03-15 | Dice count input |
+| 1.0.0   | 2025-12-26 | Initial release |
 
 ---
 
