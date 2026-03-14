@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class diceSimulator {
+public class tr_DiceSimulator {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
