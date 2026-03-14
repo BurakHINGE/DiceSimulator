@@ -1,30 +1,35 @@
 import java.util.Scanner;
-
 public class diceSimulator {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
 
         System.out.println("Zar Simulator Programına Hoş Geldiniz!");
-        System.out.println("Programda 10 tane eşit yüzlü hilesiz zarımız var.");
-        System.out.println("Girmiş olduğunuz miktar kadar tüm zarları atacağız ve gelen sayıların toplamının listesini bastıracağız.");
+        System.out.println("Programda 6 yüzü bulunan hilesiz zarlarımız var.");
+        System.out.println("Girmiş olduğunuz zar sayısı ve zar atma miktarı kadar tüm zarları atacağız ve gelen sayıların toplamının listesini bastıracağız.");
+
+        System.out.println("Kaç tane zar atmak istersiniz: ");
+        int diceCount = input.nextInt();
 
         System.out.println("Her zarı kaç defa atalım: ");
-        int N = input.nextInt();
+        int rollTimes = input.nextInt();
 
-        int[] resultArray = new int[51];
+        int maxNum = diceCount * 6 + 1;
+        int numCount = diceCount * 5 + 1;
 
-        for (int i = 10; i < 61; i++) 
+        int[] resultArray = new int[numCount];
+
+        for (int i = diceCount; i < maxNum; i++) 
         {
-            resultArray[i-10] = i;
+            resultArray[i-diceCount] = i;
         }
 
-        int[] sums = diceSim(N);
+        int[] sums = diceSim(rollTimes, diceCount);
 
-        int[] countArray = new int[51];
+        int[] countArray = new int[numCount];
 
         for (int val : sums) {
-            countArray[val - 10]++;
+            countArray[val - diceCount]++;
         }
 
         for (int i = 0; i < resultArray.length; i++)
@@ -37,27 +42,23 @@ public class diceSimulator {
             }
 
             System.out.println();
-
         }
-
     }
 
-    public static int[] diceSim(int number) {
+    public static int[] diceSim(int rollTimes, int diceCount) {
         
-        int[] diceArray = new int[number];
+        int[] diceArray = new int[rollTimes];
 
-        for (int j = 0; j < number; j++) {
+        for (int j = 0; j < rollTimes; j++) {
             int sum = 0;
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < diceCount; i++) {
                 int diceNumber = (int) (Math.random() * 6) + 1;
                 sum += diceNumber;
             }
 
-            diceArray[j] = sum;
-            
+            diceArray[j] = sum;           
         }
         
         return diceArray;
-    }
-    
+    }  
 }
