@@ -5,14 +5,14 @@
 ---
 
 ## 📌 Sürüm Bilgisi | Version Info  
- ● Current Version: 1.0.0  
- ● Geçerli Sürüm: 1.0.0  
+ ● Current Version: 1.2.0  
+ ● Geçerli Sürüm: 1.2.0  
 
 ---
 
 | Language / Dil | Status / Durum |
 |---------------|----------------|
-| English | Coming Soon |
+| English | ✅ |
 | Türkçe | ✅ |
 
 ---
@@ -33,8 +33,8 @@ The program helps demonstrate randomness, loops, arrays, and basic probability c
 
 ### 📝 Usage
 ```bash
-javac diceSimulator.java
-java diceSimulator
+javac eng_DiceSimulator.java
+java eng_DiceSimulator
 ```
 
 ---
@@ -55,8 +55,8 @@ Temel algoritma mantığı, döngüler ve diziler üzerine pratik yapmak amacıy
 
 ### 📝 Kullanım
 ```bash
-javac diceSimulator.java
-java diceSimulator
+javac tr_DiceSimulator.java
+java tr_DiceSimulator
 ```
 
 ---
@@ -65,8 +65,9 @@ java diceSimulator
 
 | Version | Date       | Description |
 |--------:|------------|-------------|
-| 1.1.0   | 2026-03-15 | Dice count input |
-| 1.0.0   | 2025-12-26 | Initial release |
+| v1.2.0  | 2026-03-15 | English version has been created|  
+| v1.1.0  | 2026-03-15 | Dice count input |
+| v1.0.0  | 2025-12-26 | Initial release |
 
 ---
 
