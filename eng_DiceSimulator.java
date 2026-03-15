@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class tr_DiceSimulator {
+public class eng_DiceSimulator {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Zar Simulator Programına Hoş Geldiniz!");
-        System.out.println("Programda 6 yüzü bulunan hilesiz zarlarımız var.");
-        System.out.println("Girmiş olduğunuz zar sayısı ve zar atma miktarı kadar tüm zarları atacağız ve gelen sayıların toplamının listesini bastıracağız.");
+        System.out.println("Welcome to the Dice Simulator Program!");
+        System.out.println("We have fair dice with 6 sides.");
+        System.out.println("We will roll all dice according to the number of dice and rolls you enter, and print a list of the sums.");
 
-        System.out.println("Kaç tane zar atmak istersiniz: ");
+        System.out.println("How many dice would you like to roll: ");
         int diceCount = input.nextInt();
 
-        System.out.println("Her zarı kaç defa atalım: ");
+        System.out.println("How many times should we roll each die: ");
         int rollTimes = input.nextInt();
 
         int maxNum = diceCount * 6 + 1;
